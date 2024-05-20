@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    size: 10px 15px;
+    padding: 15px 10px 15px 10px ;
+    border-radius: 5px;
+    place-content: center;
+}
+.contact{
+    min-height: 100vh;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.container h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    place-content: center;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+
+}
+.contact-form{
+    text-align: left;
+}
+.contact- form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+
+
+}
+.form-group{
+    margin-bottom: 20px;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.logo{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    height: 50px;
+    width: 50px;
+    background-color: #eee;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+
+
+}
+
+.con nav{
+    background-color: transparent;
+    z-index: 40;
+
+}
+
+.contact-us img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+}
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(114, 26, 26, 0.384);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar ul li:hover{
+    background-color: #f0f0f0;
+  }
+
+  
+  .sidebar li{
+    width: 100%;
+    padding: 20px;
+
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  nav a:hover{
+    background-color: white;
+    color: black;
+}
+.sidebar li a:hover{
+    background-color: #f0f0f0;
+    color: #000;
+}
+.menu-button{
+    position: fixed;
+    right: 10px;
+}
+input{ 
+    padding: 12px;
+    width: 100%;
+
+    border-radius: 80px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #45a049;
+
+}
+.contact-info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color:#f8f9fa;
+
+
+}
+.contact-info i{
+    color: #4caf50;
+    margin-right: 10px;
+
+}
+
+@media(max-width : 400px){
+    .sidebar{
+        width: 100%;
+        
+    }
+    .sidebar li a:hover{
+        background-color: #f0f0f0;
+      }
+    
+}
+@media(max-width: 800px){
+    .container{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .hide{ 
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    
+}
+
+
